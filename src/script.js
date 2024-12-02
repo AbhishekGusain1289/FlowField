@@ -87,9 +87,9 @@ gui.add(material.uniforms.uNoiseSpeed, 'value').min(0).max(10).step(0.001).name(
 gui.add(material.uniforms.uNoiseFrequency, 'value').min(0).max(10).step(0.001).name('noise frequency').onChange(() => {
     material.needsUpdate = true
 })
-gui.add(material.uniforms.uNoiseOffset, 'value').min(0).max(1).step(0.001).name('noise offset').onChange(() => {
-    material.needsUpdate = true
-})
+// gui.add(material.uniforms.uNoiseOffset, 'value').min(0).max(1).step(0.001).name('noise offset').onChange(() => {
+//     material.needsUpdate = true
+// })
 gui.add(material.uniforms.uOffset, 'value').min(0).max(1).step(0.001).name('offset').onChange(() => {
     for(let i = 0; i < sizeArray.length; i++){
         sizeArray[i] = Math.random() + material.uniforms.uOffset.value

@@ -72,7 +72,7 @@ void main()
 
 
     // float noise = (sin(0.3 * cnoise(vUv * uNoiseFrequency + uTime * uNoiseSpeed * 0.2)) + uNoiseOffset);
-    float noise = (sin(cnoise(vUv + uTime * uNoiseSpeed)));
+    float noise = (sin(cnoise(vUv * uNoiseFrequency + uTime * uNoiseSpeed)));
     // noise = min(noise, 0.9);
     // float strength = cnoise(vUv * 10.0) * 20.0;
 
